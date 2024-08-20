@@ -1,0 +1,71 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Mavenproject3 {
+
+    public static void main(String[] args) {
+      
+        Scanner sc = new Scanner(System.in);
+        
+        int codigo;
+        int gasolina = 0;
+        int alcool = 0;
+        int diesel = 0;
+        
+        do{
+    
+        System.out.println(" ");
+        System.out.println("ESCOLHA");
+        System.out.println(" ");
+        System.out.println("GASOLINA |1|");
+        System.out.println("ALCOOL   |2|");
+        System.out.println("DIESEL   |3|");
+        
+        System.out.printf("Digite um codigo:");
+        codigo = sc.nextInt();
+                
+        if (codigo == 1) {
+        
+        gasolina = gasolina + 1;
+        
+        }
+        else if(codigo == 2){
+        
+            alcool = alcool + 1;
+        
+        }    
+        else if (codigo == 3){
+        
+            diesel = diesel + 1;
+        
+        }
+        else if (codigo != 4){
+        System.out.println("CODIGO INVALIDO");
+        System.out.println(" ");
+        
+        }
+        
+        
+          
+        
+    
+        } while (codigo != 4);
+        
+        System.out.println("MUITO OBRIGADO");
+        System.out.println("DETALHES DO PEDIDO");
+        System.out.println(" ");
+        System.out.println("TOTAL DE GASOLINA:" + gasolina);
+        System.out.println("TOTAL DE ALCOOL:" + alcool);
+        System.out.println("TOTAL DE DIESEL:" + diesel);
+    
+    }
+}
